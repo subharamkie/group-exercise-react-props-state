@@ -2,7 +2,8 @@ import './App.css';
 import { useState } from 'react';
 import ChuckCard from './components/chuck_card';
 import ChuckInfo from './components/chuck_info';
-import Joke from './joke';
+import {Joke} from './joke';
+import ChuckJoke from './components/chuck_joke';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
 			<ChuckInfo whalesSaved={whalesSaved} houseKicks={roundHouseKicks}/>
 
 			<h2>Jokes: </h2>
+			<ChuckJoke jokes={jokes}/>
 
 		</div>
 	);
